@@ -26,7 +26,7 @@ pip install git+https://github.com/openai/CLIP.git
 ## PIP Dataset
 Here we introduce the usage of our PIP (Personalzed Image-Prompt) [dataset](https://drive.google.com/file/d/1i6iTeBoeLQidjRuI7xf64NTegsTrnLUf/view?usp=drive_link), which is a new personalized large-scale text-to-image dataset with over 300k prompts from 3115 users. The original user T2I histories are collected from a text-to-image website we hosted.
 
-We provide the processed PIP Dataset [here](https://drive.google.com/file/d/1i6iTeBoeLQidjRuI7xf64NTegsTrnLUf/view?usp=drive_link), which shares the same train-test split for each user and does not require further processing. Unzip it into 'user_data' directory for usage.
+Download our PIP Dataset from the link before, which shares the same train-test split for each user and does not require further processing. Unzip it into 'user_data' directory for usage.
 ```
 mkdir user_data
 unzip PIP-dataset.zip -d user_data
