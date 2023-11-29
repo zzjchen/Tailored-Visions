@@ -7,9 +7,9 @@ This repository contains the code for implementing our method (Personalized PR) 
 
 We aim to understand the intended desire of users from their historical interactions, which is achieved through the following process.
 
-1) retrieve top-k relevant prompt histories for current query;
-2) perform personalized prompt rewriting using ChatGPT;
-3) perform personalized T2I using Stable Diffusion v1-5.
+1) Retrieve top-k relevant prompt histories for current query;
+2) Perform personalized prompt rewriting using ChatGPT;
+3) Perform personalized T2I using Stable Diffusion v1-5.
 ## Requirements
 First, clone this repository:
 ```
