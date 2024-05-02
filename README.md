@@ -1,7 +1,7 @@
 # TailoredVision
 ## Official implementation for "Tailored Visions: Enhancing Text-to-Image Generation with Personalized Prompt Rewriting"
 
-[GitHub](https://github.com/zzjchen/TailoredVision) | [arXiv](https://arxiv.org/abs/2310.08129) | [PIP dataset](https://drive.google.com/file/d/1i6iTeBoeLQidjRuI7xf64NTegsTrnLUf/view?usp=drive_link)
+[GitHub](https://github.com/zzjchen/TailoredVision) | [arXiv](https://arxiv.org/abs/2310.08129) | [PIP dataset](https://drive.google.com/file/d/14VGi9ZQVxn7IX4iRWqLPtT6dhcnH7mUw/view?usp=sharing)
 
 This repository contains the code for implementing our method (Personalized PR) with the usage of our Personalized Image-Prompt (PIP) dataset. Manuscript of our paper is available on arXiv.
 
@@ -24,7 +24,7 @@ pip install git+https://github.com/openai/CLIP.git
 ```
 
 ## PIP Dataset
-Here we introduce the usage of our PIP (Personalzed Image-Prompt) [dataset](https://drive.google.com/file/d/1i6iTeBoeLQidjRuI7xf64NTegsTrnLUf/view?usp=drive_link), which is a new personalized large-scale text-to-image dataset with over 300k prompts from 3115 users. The original user T2I histories are collected from a text-to-image website we hosted.
+Here we introduce the usage of our PIP (Personalzed Image-Prompt) [dataset](https://drive.google.com/file/d/14VGi9ZQVxn7IX4iRWqLPtT6dhcnH7mUw/view?usp=sharing), which is a new personalized large-scale text-to-image dataset with over 300k prompts from 3115 users. The original user T2I histories are collected from a text-to-image website we hosted.
 
 Download our PIP Dataset from the link before, which shares the same train-test split for each user and does not require further processing. Unzip it into 'user_data' directory for usage.
 ```
