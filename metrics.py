@@ -4,7 +4,7 @@ import numpy as np
 from nltk.translate.bleu_score import sentence_bleu
 import torch
 import clip
-
+import rougeL
 @torch.no_grad()
 def clip_score(model,preprocess,image,text,device='cuda'):
     '''
@@ -74,5 +74,29 @@ def calculate_bleu(references,hypothesis):
     hyp=hypothesis.split()
     return sentence_bleu(refs,hyp)
 
+def calculate_rougel(references,hypothesis,rouge=None,beta=1.0,f_score_only=True):
+    '''
+
+    Args:
+        references: Reference string(s)
+        hypothesis: Generated string(s)
+        rouge: rougeL.Rouge object. Will create a new Rouge object if not specified
+        beta: value of beta for calculating ROUGE-L. Will not be used if 'rouge' is not None
+        f_score_only: return f_score only or full results, by default return f_score only
+
+    Returns:
+        ROUGE-L result:
+    '''
+    if rouge is None:
+        rouge=rougeL.Rouge(metrics=['rouge-l'],beta=beta)
+    result=rouge.get_scores(hypothesis,references)
+    if f_score_only:
+        result=[r['rouge-l']['f'] for r in result]
+    return result
+
+
 if __name__=="__main__":
-    pass
+    hypothesis=['a a c b c b d c c']
+    refereces=['a a a b b b c c c']
+    a=calculate_rougel(refereces,hypothesis,beta=5)
+    print(a)
