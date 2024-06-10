@@ -53,7 +53,7 @@ def img_align(model,preprocess,ori_image,gen_image,device='cuda'):
     gen_features = model.encode_image(gen_image)
     gen_features /= gen_features.norm(dim=-1, keepdim=True)
     ori_features /= ori_features.norm(dim=-1, keepdim=True)
-    score=2.5*(ori_features @ gen_features.T)
+    score=1.0*(ori_features @ gen_features.T)
     if score<0:
         score=0.0
     return score
