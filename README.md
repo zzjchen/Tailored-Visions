@@ -10,6 +10,14 @@ We aim to understand the intended desire of users from their historical interact
 1) Retrieve top-k relevant prompt histories for current query;
 2) Perform personalized prompt rewriting using ChatGPT;
 3) Perform personalized T2I using Stable Diffusion v1-5.
+
+### <mark>**!!! Note:**</mark>
+Due to changes to our cloud storage. The image URL provided in our dataset is currently unavailable. We're trying to fix it by searching for backups.
+
+Generally, our method uses only the user prompt as input, and the original image is only included in evaluation. This should not affect most part of our code.
+
+If you intend to use the original image (such as calculating "Image-Align" score), an alternative approach would be to generate one (using the user prompt and a T2I model). This should roughly be ok. 
+
 ## Requirements
 First, clone this repository:
 ```
