@@ -11,6 +11,8 @@ We aim to understand the intended desire of users from their historical interact
 2) Perform personalized prompt rewriting using ChatGPT;
 3) Perform personalized T2I using Stable Diffusion v1-5.
 
+![method](fig/Pipeline.png)
+
 ### <mark>**!!! Note:**</mark>
 Due to changes to our cloud storage. The image URL provided in our dataset is currently unavailable. We're trying to fix it by searching for backups.
 
